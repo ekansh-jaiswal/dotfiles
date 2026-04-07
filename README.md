@@ -1,4 +1,4 @@
-# 🛠️ Ekansh's Aesthetic Arch Dotfiles
+# 🛠️ Aesthetic Arch Dotfiles
 
 [![Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blue?logo=arch-linux)](https://archlinux.org/)
 [![WM](https://img.shields.io/badge/WM-Openbox-orange)](http://openbox.org/)
@@ -15,12 +15,12 @@ A highly customized, offensive-security-focused environment optimized for **Capt
 ## 🚀 Quick Start / Recovery
 If you are on a fresh Arch install, run the following to restore the entire environment:
 
-\`\`\`bash
+```bash
 git clone https://github.com/ekansh-jaiswal/dotfiles.git
 cd dotfiles
 chmod +x setup.sh
 ./setup.sh
-\`\`\`
+```
 
 ## 🛡️ Fail-Safe Features
 - **Atomic Symlinking:** Prevents configuration loops and file corruption.
