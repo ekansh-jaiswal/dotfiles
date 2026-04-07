@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# 1. The Compositor (Load this FIRST)
+picom -b &
+
+# 2. Give the compositor a second to breathe
+numlockx on &
+sleep 1
+
+# 3. The Wallpaper
+feh --bg-fill /home/alpha0/Wallpapers/aesthetic_deer.jpg &
+
+# 4. Launch Polybar (If you have a launch script, use that instead)
+# If your bar is named 'top', use: polybar top &
+~/.config/polybar/launch.sh --shapes & 
+
+# 5. Plank (Add a tiny delay so it gets transparency from picom)
+(sleep 2 && plank) &
+
+# 6. Network Manager
+nm-applet &
+
+#7. Idk what the fuck is this.
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+#8. XFCE4 Power Manager startup script to get other functionalities like handling keybinds and power management
+xfce4-power-manager &
+
+#9. Super Key mapping.
+ksuperkey -e 'Super_L=Super_L|space' &
+
+#10. MPD Server Start
+mpd &
+(sleep 3 && mpc pause) &
