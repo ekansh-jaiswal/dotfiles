@@ -1,8 +1,7 @@
-# 🛠️ Ekansh's Aesthetic Arch Dotfiles
+# 🛠️ Aesthetic Arch Dotfiles
 
 [![Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blue?logo=arch-linux)](https://archlinux.org/)
 [![WM](https://img.shields.io/badge/WM-Openbox-orange)](http://openbox.org/)
-[![Rank](https://img.shields.io/badge/Hackviser-Rank%20%231%20India-red)](https://hackviser.com)
 
 A highly customized, offensive-security-focused environment optimized for **Capture The Flag (CTF)** competitions and **Automated Penetration Testing**.
 
@@ -15,12 +14,12 @@ A highly customized, offensive-security-focused environment optimized for **Capt
 ## 🚀 Quick Start / Recovery
 If you are on a fresh Arch install, run the following to restore the entire environment:
 
-\`\`\`bash
+```bash
 git clone https://github.com/ekansh-jaiswal/dotfiles.git
 cd dotfiles
 chmod +x setup.sh
 ./setup.sh
-\`\`\`
+```
 
 ## 🛡️ Fail-Safe Features
 - **Atomic Symlinking:** Prevents configuration loops and file corruption.
@@ -28,10 +27,10 @@ chmod +x setup.sh
 - **Dependency Check:** Automatically installs `paru` and necessary Nerd Fonts.
 
 ## 📁 Repository Structure
-- \`config/openbox/\`: Core WM settings & startup hooks.
-- \`config/polybar/\`: Multi-module status bar configurations.
-- \`config/picom/\`: Blur and shadow settings for the "aesthetic" feel.
-- \`setup.sh\`: The bullet-proof installation script.
+- `config/openbox/`: Core WM settings & startup hooks.
+- `config/polybar/`: Multi-module status bar configurations.
+- `config/picom/`: Blur and shadow settings for the "aesthetic" feel.
+- `setup.sh`: The bullet-proof installation script.
 
 ---
 *Maintained by [Ekansh Jaiswal](https://github.com/ekansh-jaiswal)*
