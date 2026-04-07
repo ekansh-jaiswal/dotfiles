@@ -2,7 +2,6 @@
 
 [![Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blue?logo=arch-linux)](https://archlinux.org/)
 [![WM](https://img.shields.io/badge/WM-Openbox-orange)](http://openbox.org/)
-[![Rank](https://img.shields.io/badge/Hackviser-Rank%20%231%20India-red)](https://hackviser.com)
 
 A highly customized, offensive-security-focused environment optimized for **Capture The Flag (CTF)** competitions and **Automated Penetration Testing**.
 
