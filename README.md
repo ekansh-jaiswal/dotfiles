@@ -27,10 +27,10 @@ chmod +x setup.sh
 - **Dependency Check:** Automatically installs `paru` and necessary Nerd Fonts.
 
 ## 📁 Repository Structure
-- \`config/openbox/\`: Core WM settings & startup hooks.
-- \`config/polybar/\`: Multi-module status bar configurations.
-- \`config/picom/\`: Blur and shadow settings for the "aesthetic" feel.
-- \`setup.sh\`: The bullet-proof installation script.
+- `config/openbox/`: Core WM settings & startup hooks.
+- `config/polybar/`: Multi-module status bar configurations.
+- `config/picom/`: Blur and shadow settings for the "aesthetic" feel.
+- `setup.sh`: The bullet-proof installation script.
 
 ---
 *Maintained by [Ekansh Jaiswal](https://github.com/ekansh-jaiswal)*
