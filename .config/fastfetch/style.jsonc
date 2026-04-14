@@ -1,0 +1,96 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source": "/home/alpha0/.config/fastfetch/blackhole.txt",
+        "padding": {
+            "top": 2,
+            "right": 2
+        }
+    },
+    "display": {
+        "separator": " ➜ ",
+        "color": "magenta"
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",    
+        {
+            "type": "custom",
+            "format": "   Welcome Master! 󰚩 ",
+            "outputColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "┌───────────────────────────────────────────┐",
+            "outputColor": "blue"
+        },
+        {
+            "type": "os",
+            "key": " 󰣇  OS", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "kernel",
+            "key": " 󰌽  Kernel", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "packages",
+            "key": " 󰏖  Packages", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "   WM", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "   Terminal", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────┘",
+            "outputColor": "blue"
+        },
+        "break",
+        {
+            "type": "title",
+            "key": "  ",
+            "format": "{user-name}@{host-name}"
+        },
+        {
+            "type": "custom",
+            "format": "┌───────────────────────────────────────────┐",
+            "outputColor": "blue"
+        },
+        {
+            "type": "cpu",
+            "key": " 󰻠  CPU", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "gpu",
+            "key": " 󰢮  GPU", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "memory",
+            "key": " 󰍛  Memory", 
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────┘",
+            "outputColor": "blue"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}
