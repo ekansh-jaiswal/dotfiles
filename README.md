@@ -1,36 +1,104 @@
-# 🛠️ Aesthetic Arch Dotfiles
+# dotfiles
 
-[![Arch Linux](https://img.shields.io/badge/OS-Arch%20Linux-blue?logo=arch-linux)](https://archlinux.org/)
-[![WM](https://img.shields.io/badge/WM-Openbox-orange)](http://openbox.org/)
+Personal Arch Linux dotfiles for an Openbox-based desktop focused on a fast keyboard-driven workflow, clean aesthetics, and a practical terminal environment.
 
-A highly customized, offensive-security-focused environment optimized for **Capture The Flag (CTF)** competitions and **Automated Penetration Testing**.
+This repository contains my current desktop and shell setup, including:
 
-## 🎨 Environment Highlights
-- **Window Manager:** Openbox (Customized for low-latency workflow)
-- **Status Bar:** Polybar (Shapes Theme)
-- **Compositor:** Picom (Transparency & Rounded Corners)
-- **Shell:** Customized terminal with essential aliases for `nmap`, `ffuf`, and `metasploit`.
+- **Openbox** window manager configuration
+- **Polybar** themes and launcher
+- **Picom** compositor settings
+- **Fastfetch** terminal welcome screen
+- personal **Zsh** configuration
 
-## 🚀 Quick Start / Recovery
-If you are on a fresh Arch install, run the following to restore the entire environment:
-
-```bash
-git clone https://github.com/ekansh-jaiswal/dotfiles.git
-cd dotfiles
-chmod +x setup.sh
-./setup.sh
-```
-
-## 🛡️ Fail-Safe Features
-- **Atomic Symlinking:** Prevents configuration loops and file corruption.
-- **Auto-Backup:** Any existing configs are moved to a timestamped backup folder before deployment.
-- **Dependency Check:** Automatically installs `paru` and necessary Nerd Fonts.
-
-## 📁 Repository Structure
-- `config/openbox/`: Core WM settings & startup hooks.
-- `config/polybar/`: Multi-module status bar configurations.
-- `config/picom/`: Blur and shadow settings for the "aesthetic" feel.
-- `setup.sh`: The bullet-proof installation script.
+> [!IMPORTANT]
+> This is a **personal dotfiles repository**, not a fully portable universal setup.
+> It is designed primarily for my own Arch Linux environment and may require adjustments on another machine.
 
 ---
-*Maintained by [Ekansh Jaiswal](https://github.com/ekansh-jaiswal)*
+
+## Table of Contents
+
+- [Overview](#overview)
+- [What is Included](#what-is-included)
+- [Repository Structure](#repository-structure)
+- [Current Status](#current-status)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Manual Setup Notes](#manual-setup-notes)
+- [Known Limitations](#known-limitations)
+- [Recommended Improvements](#recommended-improvements)
+- [Screens and Workflow](#screens-and-workflow)
+- [License](#license)
+
+---
+
+## Overview
+
+This repo stores the configuration files for my current Linux desktop environment.
+
+The setup is built around:
+
+- **Arch Linux**
+- **Openbox**
+- **Polybar**
+- **Picom**
+- **Zsh**
+- **Fastfetch**
+
+The goal is to keep a desktop that feels lightweight, visually clean, and comfortable for daily terminal-heavy work.
+
+---
+
+## What is Included
+
+### Desktop
+- Openbox configuration
+- Polybar themes and launcher
+- Picom compositor config
+- GTK config
+
+### Terminal / Shell
+- Zsh configuration
+- Powerlevel10k theme setup
+- plugin-based shell enhancements
+- Fastfetch startup output
+
+### Misc
+- install/setup script
+- package list placeholder
+
+---
+
+## Repository Structure
+
+```text
+dotfiles/
+├── .gitignore
+├── .zshrc
+├── README.md
+├── pkglist.txt
+├── setup.sh
+└── config/
+    ├── fastfetch/
+    │   ├── blackhole.txt
+    │   └── style.jsonc
+    ├── gtk-3.0/
+    ├── openbox/
+    │   ├── autostart
+    │   └── rc.xml
+    ├── picom/
+    │   └── picom.conf
+    └── polybar/
+        ├── blocks/
+        ├── colorblocks/
+        ├── cuts/
+        ├── docky/
+        ├── forest/
+        ├── grayblocks/
+        ├── hack/
+        ├── material/
+        ├── panels/
+        ├── pwidgets/
+        ├── shades/
+        ├── shapes/
+        └── launch.sh
