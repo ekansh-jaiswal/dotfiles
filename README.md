@@ -21,9 +21,6 @@ This repository contains my current desktop and shell setup, including:
 - [Overview](#overview)
 - [What is Included](#what-is-included)
 - [Repository Structure](#repository-structure)
-- [Current Status](#current-status)
-- [Requirements](#requirements)
-- [Installation](#installation)
 - [License](#license)
 
 ---
