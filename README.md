@@ -24,10 +24,6 @@ This repository contains my current desktop and shell setup, including:
 - [Current Status](#current-status)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Manual Setup Notes](#manual-setup-notes)
-- [Known Limitations](#known-limitations)
-- [Recommended Improvements](#recommended-improvements)
-- [Screens and Workflow](#screens-and-workflow)
 - [License](#license)
 
 ---
