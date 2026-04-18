@@ -1,0 +1,39 @@
+#!/bin/bash
+# yt-search: Auto-routing Cache, Download, and Play
+
+QUERY="$*"
+echo "Searching and caching: $QUERY..."
+
+# 1. Automatically find your real MPD music directory
+MUSIC_DIR=$(awk '/^music_directory/ {print $2}' ~/.config/mpd/mpd.conf | tr -d '"' | sed "s|~|$HOME|")
+
+if [ -z "$MUSIC_DIR" ]; then
+    echo "Error: Could not read music_directory from ~/.config/mpd/mpd.conf"
+    exit 1
+fi
+
+CACHE_DIR="Youtube-Cache"
+mkdir -p "$MUSIC_DIR/$CACHE_DIR"
+
+# 2. Download and tag the file directly into your MPD library
+yt-dlp -f bestaudio -x --audio-format opus \
+    --embed-metadata \
+    -o "$MUSIC_DIR/$CACHE_DIR/%(title)s.%(ext)s" \
+    "ytsearch1:$QUERY"
+
+# 3. Force MPD to update its database and wait for it to finish
+echo "Syncing with MPD..."
+mpc update --wait > /dev/null
+
+# 4. Grab the exact filename of the newest download to avoid special character errors
+NEWEST_FILE=$(ls -t "$MUSIC_DIR/$CACHE_DIR" | head -n 1)
+
+# 5. Add to queue and play
+if [ -n "$NEWEST_FILE" ]; then
+    mpc add "$CACHE_DIR/$NEWEST_FILE"
+    NEW_TRACK_NUM=$(mpc playlist | wc -l)
+    mpc play "$NEW_TRACK_NUM"
+    echo "Now Playing: $NEWEST_FILE"
+else
+    echo "Error: File not found after download."
+fi
